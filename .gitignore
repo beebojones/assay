@@ -1,0 +1,12 @@
+# Raw, model-named builds must never go public.
+# Ignore everything in builds/ except the placeholder that keeps the dir.
+builds/*
+!builds/.gitkeep
+
+# Blinding keys / any secret mapping files.
+key*
+*.key.md
+*.key.json
+
+# Python bytecode cache.
+__pycache__/
